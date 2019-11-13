@@ -20,7 +20,7 @@ public class CrawlerTask {
     @Value("${app.crawler.enabled}")
     private Boolean enabled; //开启关闭爬虫
     @Value("${app.crawler.urls}")
-    private String urls;//爬虫地址
+    private String urls;//爬虫地址 虚拟哈
     @Resource
     private CrawlerService crawlerService;
     //任务执行的方法

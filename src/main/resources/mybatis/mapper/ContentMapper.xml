@@ -28,7 +28,7 @@
         select
         <include refid="Base_Column_List"/>
         from t_content
-        where content_id = #{contentId,jdbcType=BIGINT}
+        where content_id = #{contentId,jdbcType=BIGINT} order by create_time desc
     </select>
     <delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
     delete from t_content
@@ -234,5 +234,6 @@
         <if test="keyword != null">
             and c.content_text like #{keyword}
         </if>
+            order  by create_time
     </select>
 </mapper>

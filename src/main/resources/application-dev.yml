@@ -17,11 +17,11 @@ spring:
     #取消thymeleaf缓存，让页面热部署
     cache: false
 #logging:
-# level:
+#  level:
 #    将mapper包下的日志最低级别调整为debug,输出SQL语句
-#   com.itlaoqi.bsbdj.mapper: debug
-# file: d:/logs/bsbdj.log
+#    com.itlaoqi.bsbdj.mapper: debug
+#   file: d:/logs/bsbdj.log
 server:
-  port: 80
+  port: 8080
 
 
